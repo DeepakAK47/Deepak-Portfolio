@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <img src="assets/avatar.png" alt="Avatar" class="avatar" />
+      <h1 class="name">Deepak Singh</h1>
+      <p class="role">AIML Engineer</p>
+
+      <div class="info">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span class="label">dsinghak6@gmail.com</span>
+            <span>you@example.com</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="label">LOCATION</span>
+            <span>Your City, Country</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <span class="label">LINKEDIN</span>
+            <span>Your Handle</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <span class="label">GITHUB</span>
+            <span>Your Handle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <!-- NAV TABS -->
+      <nav class="tabs">
+        <button class="tab active" data-tab="about">About</button>
+        <button class="tab" data-tab="resume">Resume</button>
+        <button class="tab" data-tab="projects">Projects</button>
+        <button class="tab" data-tab="certs">Certifications</button>
+        <button class="tab" data-tab="contact">Contact</button>
+      </nav>
+
+      <!-- ABOUT -->
+      <section id="about" class="section active">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+        <p>I'm a Full Stack Web Developer passionate about problem solving, UI effects and animations.</p>
+        <p>Well-organised, self-motivated and creative person with high attention to detail.</p>
+
+        <h3>My Interests</h3>
+        <div class="cards">
+          <div class="card">
+            <i class="fa-solid fa-code icon"></i>
+            <h4>Web Development</h4>
+            <p>Short description of your interest here.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-pen-ruler icon"></i>
+            <h4>Web Design</h4>
+            <p>Short description of your interest here.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-chart-line icon"></i>
+            <h4>Data Science</h4>
+            <p>Short description of your interest here.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <div class="underline"></div>
+        <h3>Education</h3>
+        <p><strong>Your College</strong> — 2022–Present</p>
+        <p>B.Tech in Your Branch</p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+        <p>Your projects will go here.</p>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certs" class="section">
+        <h2>Certifications</h2>
+        <div class="underline"></div>
+        <p>Your certificates will go here.</p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <p>Reach me at you@example.com</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
