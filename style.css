@@ -245,3 +245,238 @@ body {
   .tabs { justify-content: center; gap: 15px; }
   .content { padding: 25px; }
 }
+
+
+/* ===== RESUME BLOCKS ===== */
+.resume-block {
+  margin-bottom: 45px;
+}
+
+.block-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.block-icon {
+  width: 45px;
+  height: 45px;
+  background: #141414;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-icon i {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.block-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -39px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--card);
+}
+
+.timeline-item h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+.timeline-date {
+  display: block;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== SKILLS CARD ===== */
+.skills-card {
+  background: #141414;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skill {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f5c518, #ffdd57);
+  border-radius: 10px;
+  width: 0;
+  transition: width 1.2s ease-in-out;
+}
+
+/* ===== RESUME CTA (after skills) ===== */
+.resume-cta {
+  margin-top: 35px;
+  background: #141414;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.resume-cta::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+}
+
+.resume-cta:hover {
+  border-color: var(--accent);
+}
+
+.resume-cta-text h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.resume-cta-text p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.resume-cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Reuse the button styles from before */
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: var(--accent);
+  color: #0d0d0d;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent);
+  white-space: nowrap;
+}
+
+.resume-btn:hover {
+  background: #ffdd57;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 197, 24, 0.25);
+}
+
+.resume-btn.outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.resume-btn.outline:hover {
+  background: var(--accent);
+  color: #0d0d0d;
+}
+
+.resume-btn i {
+  font-size: 0.9rem;
+}
+
+/* Mobile: stack */
+@media (max-width: 700px) {
+  .resume-cta {
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+  }
+  .resume-cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .resume-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  .resume-cta-buttons {
+    flex-direction: column;
+  }
+}

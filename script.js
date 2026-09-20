@@ -12,3 +12,18 @@ tabs.forEach(tab => {
     document.getElementById(tab.dataset.tab).classList.add('active');
   });
 });
+
+
+// ===== SKILL BAR ANIMATION =====
+const resumeTab = document.querySelector('[data-tab="resume"]');
+
+resumeTab.addEventListener('click', () => {
+  const fills = document.querySelectorAll('.skill-fill');
+  fills.forEach(fill => {
+    const target = fill.style.width;
+    fill.style.width = '0';
+    setTimeout(() => {
+      fill.style.width = target;
+    }, 100);
+  });
+});
