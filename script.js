@@ -27,3 +27,38 @@ resumeTab.addEventListener('click', () => {
     }, 100);
   });
 });
+
+/* ===== CERTIFICATE MODAL ===== */
+const certModal = document.getElementById('certModal');
+const certModalImg = document.getElementById('certModalImg');
+const certButtons = document.querySelectorAll('.cert-btn');
+const certCloseEls = document.querySelectorAll('[data-close]');
+
+// Open modal
+certButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const imgSrc = btn.getAttribute('data-cert');
+    certModalImg.src = imgSrc;
+    certModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close modal function
+function closeCertModal() {
+  certModal.classList.remove('active');
+  certModalImg.src = '';
+  document.body.style.overflow = '';
+}
+
+// Close on X / overlay click
+certCloseEls.forEach(el => {
+  el.addEventListener('click', closeCertModal);
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && certModal.classList.contains('active')) {
+    closeCertModal();
+  }
+});

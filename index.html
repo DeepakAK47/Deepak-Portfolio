@@ -14,7 +14,7 @@
 
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
-      <img src="assets/deepakPhoto.jpeg" alt="Avatar" class="avatar" />
+      <img src="assets/deepak_HK_pic.jpeg" alt="Avatar" class="avatar" />
       <h1 class="name">Deepak Singh</h1>
       <p class="role">AI/ML Engineer</p>
 
@@ -216,56 +216,140 @@
           </div>
         </div>
 
-<!-- RESUME BUTTONS (inside resume section) -->
-<div class="resume-actions">
-  <a href="assets/Resume_ML.pdf" target="_blank" class="resume-btn">
-    <i class="fa-solid fa-eye"></i> View Resume
-  </a>
-  <a href="assets/Resume_ML.pdf" download="Deepak_Singh_Resume.pdf" class="resume-btn outline">
-    <i class="fa-solid fa-download"></i> Download Resume
-  </a>
-</div>
-</section>
-      <!-- ✅ RESUME SECTION ENDS HERE -->
+        <!-- RESUME BUTTONS -->
+        <div class="resume-actions">
+          <a href="assets/Resume_ML.pdf" target="_blank" class="resume-btn">
+            <i class="fa-solid fa-eye"></i> View Resume
+          </a>
+          <a href="assets/Resume_ML.pdf" download="Deepak_Singh_Resume.pdf" class="resume-btn outline">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </section>
 
       <!-- ===== PROJECTS ===== -->
       <section id="projects" class="section">
         <h2>Projects</h2>
         <div class="underline"></div>
 
-        <div class="card">
-          <h4>Movie Recommendation System</h4>
-          <p>Content-based recommender using TMDB 5000 dataset, NLP preprocessing and cosine similarity to return top-5 similar movies.</p>
-          <p><strong>Tech:</strong> Python, Pandas, NumPy, Scikit-learn, NLTK</p>
+        <div class="project-list">
+
+          <!-- PROJECT 1: WhatsApp Chat Analyzer -->
+          <div class="project-card">
+            <div class="project-header">
+              <h4>WhatsApp Chat Analyzer</h4>
+              <span class="project-year">Jul 2025 – Sep 2025</span>
+            </div>
+
+            <p>
+              A Streamlit-based web app that transforms exported WhatsApp chat files (.txt) into
+              interactive visual insights — including total messages, word count, media shared,
+              most active users, word clouds, most common words, and monthly/hourly activity charts.
+              Users can filter by participant and date range for personalized analysis.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Regex</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">WordCloud</span>
+              <span class="tag">Render</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://whatapp-chat-analyser.onrender.com/" target="_blank" rel="noopener" class="project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/DeepakAK47/whatapp_chat_analyser" target="_blank" rel="noopener" class="project-link outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Movie Recommendation System -->
+          <div class="project-card">
+            <div class="project-header">
+              <h4>Movie Recommendation System</h4>
+              <span class="project-year">Mar 2026 – May 2026</span>
+            </div>
+
+            <p>
+              A content-based movie recommender built on the TMDB 5000 dataset. It applies NLP
+              preprocessing (tokenization, stopword removal, stemming) on movie metadata (genres,
+              keywords, cast, crew, overview), vectorizes the combined features using TF-IDF, and
+              computes a cosine similarity matrix to return the top-5 most similar movies for any
+              given title. Deployed as an interactive Streamlit web app with live TMDB API integration
+              for movie posters.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">NLTK</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">TMDB API</span>
+              <span class="tag">Git LFS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://movie-recommendation-system-4hvz.onrender.com/" target="_blank" rel="noopener" class="project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/DeepakAK47/movie_recommendation_system" target="_blank" rel="noopener" class="project-link outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
-<!-- ===== CERTIFICATIONS ===== -->
+      <!-- ===== CERTIFICATIONS ===== -->
 <section id="certs" class="section">
   <h2>Certifications & Awards</h2>
   <div class="underline"></div>
 
   <div class="cert-list">
 
-    <!-- CERT 1: INDIAN ARMY -->
-    <div class="cert-card">
-      <div class="cert-gallery">
-        <img src="assets/img1.jpg" alt="Army Certificate" class="main-img" loading="lazy" />
-        <div class="sub-imgs">
-          <img src="assets/img4.jpg" alt="Army Ceremony" loading="lazy" />
-          <img src="assets/img2.jpg" alt="Army Workspace" loading="lazy" />
-        </div>
-        <span class="cert-badge">
-          <i class="fa-solid fa-shield-halved"></i> Indian Army
-        </span>
-      </div>
-
-      <div class="cert-body">
-        <h4>AI/ML Internship Certificate</h4>
-        <p class="cert-issuer">505 Army Base Workshop, Delhi Cantt.</p>
-        <p>Completed AI/ML internship under Lt. Col. Narender Pal Singh Mann, developing predictive maintenance systems for T-72 battle tanks.</p>
-      </div>
+   <!-- CERT 1: INDIAN ARMY -->
+<div class="cert-card">
+  <div class="cert-gallery">
+    <img src="assets/img1.jpg" alt="Army Certificate" class="main-img" loading="lazy" />
+    <div class="sub-imgs">
+      <img src="assets/img4.jpg" alt="Army Ceremony" loading="lazy" />
+      <img src="assets/img2.jpg" alt="Army Workspace" loading="lazy" />
     </div>
+    <span class="cert-badge">
+      <i class="fa-solid fa-shield-halved"></i> Indian Army
+    </span>
+  </div>
+
+  <div class="cert-body">
+    <div class="cert-title-row">
+      <h4>AI/ML Internship Certificate</h4>
+      <span class="cert-year">2026</span>
+    </div>
+
+    <p class="cert-issuer">
+      <i class="fa-solid fa-building-shield"></i>
+      505 Army Base Workshop, Delhi Cantt.
+    </p>
+
+    <p class="cert-description">
+      Completed AI/ML internship under Lt. Col. Narender Pal Singh Mann, developing
+      predictive maintenance systems for T-72 battle tanks — including LSTM-based
+      anomaly detection and XGBoost classification achieving 92% accuracy.
+    </p>
+
+    <button class="cert-btn" data-cert="assets/img1.jpg">
+      <i class="fa-solid fa-certificate"></i> View Certificate
+    </button>
+  </div>
+</div>
 
     <!-- CERT 2: SMART DELHI IDEATION -->
     <div class="cert-card">
@@ -283,22 +367,124 @@
       <div class="cert-body">
         <h4>2nd Position — Smart Delhi Ideation 2024</h4>
         <p class="cert-issuer">Awarded by Hon'ble Lt. Governor of Delhi</p>
-        <p>Ranked 2nd among 1000+ teams in a GGSIPU-organized innovation challenge at Vigyan Bhawan.</p>
+        <p>Ranked 2nd among 1000+ teams in a GGSIPU-organized innovation challenge at Vigyan Bhawan. Presented a tech-driven solution evaluated on feasibility, impact and innovation.</p>
+
+        <button class="cert-btn" data-cert="assets/img3.jpg">
+          <i class="fa-solid fa-certificate"></i> View Certificate
+        </button>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- ===== CERTIFICATE MODAL ===== -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-overlay" data-close></div>
+  <div class="cert-modal-content">
+    <button class="cert-modal-close" data-close aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img src="" alt="Certificate" id="certModalImg" />
+  </div>
+</div>
+
       <!-- ===== CONTACT ===== -->
-      <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="underline"></div>
-        <p>Email: dsinghak6@gmail.com</p>
-        <p>Phone: +91-9891645586</p>
-        <p>LinkedIn: linkedin.com/in/deepak-singh-ai-ds</p>
-        <p>GitHub: github.com/DeepakAK47</p>
-      </section>
+<section id="contact" class="section">
+  <h2>Let's Connect</h2>
+  <div class="underline"></div>
+
+  <p class="contact-intro">
+    I'm actively looking for <strong>AI/ML engineering</strong>, <strong>data science</strong> and
+    <strong>research</strong> roles — plus open to competitive programming collaborations,
+    open-source contributions and ambitious side projects. If you're building something
+    interesting, I'd love to hear about it.
+  </p>
+
+  <div class="availability">
+    <span class="status-dot"></span>
+    <span>Currently available for opportunities</span>
+  </div>
+
+  <div class="contact-grid">
+
+    <a href="mailto:dsinghak6@gmail.com" class="contact-card">
+      <div class="contact-icon">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">EMAIL</span>
+        <span class="contact-value">dsinghak6@gmail.com</span>
+      </div>
+      <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+    </a>
+
+    <a href="tel:+919891645586" class="contact-card">
+      <div class="contact-icon">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">PHONE</span>
+        <span class="contact-value">+91-9891645586</span>
+      </div>
+      <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/deepak-singh-ai-ds" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">LINKEDIN</span>
+        <span class="contact-value">deepak-singh-ai-ds</span>
+      </div>
+      <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+    </a>
+
+    <a href="https://github.com/DeepakAK47" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">GITHUB</span>
+        <span class="contact-value">DeepakAK47</span>
+      </div>
+      <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+    </a>
+
+    <a href="https://leetcode.com/u/Deepak_singh01082003/" target="_blank" rel="noopener" class="contact-card">
+      <div class="contact-icon">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">LEETCODE</span>
+        <span class="contact-value">Deepak_singh01082003</span>
+      </div>
+      <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+    </a>
+
+    <div class="contact-card static">
+      <div class="contact-icon">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">LOCATION</span>
+        <span class="contact-value">New Delhi, India</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="contact-cta">
+    <div class="cta-text">
+      <h4>Have an idea worth building?</h4>
+      <p>Drop me a message — I usually reply within 24 hours.</p>
+    </div>
+    <a href="mailto:dsinghak6@gmail.com" class="resume-btn">
+      <i class="fa-solid fa-paper-plane"></i> Send an Email
+    </a>
+  </div>
+</section>
 
     </main>
   </div>
