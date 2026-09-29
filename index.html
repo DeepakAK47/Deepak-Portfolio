@@ -308,56 +308,68 @@
         </div>
       </section>
 
-      <!-- ===== CERTIFICATIONS ===== -->
+    <!-- ===== CERTIFICATIONS ===== -->
 <section id="certs" class="section">
-  <h2>Certifications & Awards</h2>
+  <h2>Certifications &amp; Awards</h2>
   <div class="underline"></div>
 
   <div class="cert-list">
 
-   <!-- CERT 1: INDIAN ARMY -->
-<div class="cert-card">
-  <div class="cert-gallery">
-    <img src="assets/img1.jpg" alt="Army Certificate" class="main-img" loading="lazy" />
-    <div class="sub-imgs">
-      <img src="assets/img4.jpg" alt="Army Ceremony" loading="lazy" />
-      <img src="assets/img2.jpg" alt="Army Workspace" loading="lazy" />
-    </div>
-    <span class="cert-badge">
-      <i class="fa-solid fa-shield-halved"></i> Indian Army
-    </span>
-  </div>
+    <!-- CERT 1: INDIAN ARMY -->
+    <article class="cert-card">
+      <div class="cert-gallery">
+        <img src="assets/img9.jpeg" class="main-img" alt="Army internship certificate" loading="lazy" />
+        <div class="sub-imgs">
+          <img src="assets/img4.jpg" class="top" alt="Army ceremony" loading="lazy" />
+          <img src="assets/img7.jpeg" alt="Army workspace" loading="lazy" />
+        </div>
+        <span class="cert-badge">
+          <i class="fa-solid fa-shield-halved"></i> Indian Army
+        </span>
+      </div>
 
-  <div class="cert-body">
-    <div class="cert-title-row">
-      <h4>AI/ML Internship Certificate</h4>
-      <span class="cert-year">2026</span>
-    </div>
+      <div class="cert-body">
+        <span class="cert-kicker">Featured experience</span>
+        <div class="cert-title-row">
+          <h4>AI/ML Internship Certificate</h4>
+          <span class="cert-year">2026</span>
+        </div>
 
-    <p class="cert-issuer">
-      <i class="fa-solid fa-building-shield"></i>
-      505 Army Base Workshop, Delhi Cantt.
-    </p>
+        <p class="cert-issuer">
+          <i class="fa-solid fa-building-shield"></i>
+          505 Army Base Workshop, Delhi Cantt.
+        </p>
 
-    <p class="cert-description">
-      Completed AI/ML internship under Lt. Col. Narender Pal Singh Mann, developing
-      predictive maintenance systems for T-72 battle tanks — including LSTM-based
-      anomaly detection and XGBoost classification achieving 92% accuracy.
-    </p>
+        <p class="cert-description">
+          Completed AI/ML internship under Lt. Col. Narender Pal Singh Mann, developing
+          predictive maintenance systems for T-72 battle tanks, including LSTM-based
+          anomaly detection and XGBoost classification achieving <strong>92% accuracy</strong>.
+        </p>
 
-    <button class="cert-btn" data-cert="assets/img1.jpg">
-      <i class="fa-solid fa-certificate"></i> View Certificate
-    </button>
-  </div>
-</div>
+        <div class="cert-details">
+          <div>
+            <span class="detail-label">Focus</span>
+            <strong>Predictive maintenance</strong>
+          </div>
+          <div>
+            <span class="detail-label">Outcome</span>
+            <strong>92% model accuracy</strong>
+          </div>
+        </div>
+
+        <button type="button" class="cert-btn" data-cert="assets/img9.jpeg">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View certificate
+        </button>
+      </div>
+    </article>
 
     <!-- CERT 2: SMART DELHI IDEATION -->
-    <div class="cert-card">
+    <article class="cert-card">
       <div class="cert-gallery">
-        <img src="assets/img3.jpg" alt="Smart Delhi Certificate" class="main-img" loading="lazy" />
+        <img src="assets/img3.jpg" class="main-img" alt="Smart Delhi certificate" loading="lazy" />
         <div class="sub-imgs">
-          <img src="assets/img5.jpg" alt="Smart Delhi Stage" loading="lazy" />
-          <img src="assets/img6.jpg" alt="Smart Delhi Team" loading="lazy" />
+          <img src="assets/img5.jpg" class="top" alt="Smart Delhi stage" loading="lazy" />
+          <img src="assets/img8.jpeg" alt="Smart Delhi team" loading="lazy" />
         </div>
         <span class="cert-badge">
           <i class="fa-solid fa-trophy"></i> Winner
@@ -365,30 +377,53 @@
       </div>
 
       <div class="cert-body">
-        <h4>2nd Position — Smart Delhi Ideation 2024</h4>
-        <p class="cert-issuer">Awarded by Hon'ble Lt. Governor of Delhi</p>
-        <p>Ranked 2nd among 1000+ teams in a GGSIPU-organized innovation challenge at Vigyan Bhawan. Presented a tech-driven solution evaluated on feasibility, impact and innovation.</p>
+        <span class="cert-kicker">Innovation award</span>
+        <div class="cert-title-row">
+          <h4>2nd Position: Smart Delhi Ideation 2024</h4>
+          <span class="cert-year">2024</span>
+        </div>
 
-        <button class="cert-btn" data-cert="assets/img3.jpg">
-          <i class="fa-solid fa-certificate"></i> View Certificate
+        <p class="cert-issuer">
+          <i class="fa-solid fa-award"></i>
+          Awarded by Hon'ble Lt. Governor of Delhi
+        </p>
+
+        <p class="cert-description">
+          Secured <strong>2nd place among 1000+ teams</strong> in a GGSIPU innovation challenge at
+          Vigyan Bhawan, presenting a practical, tech-driven solution evaluated on feasibility,
+          impact, and innovation.
+        </p>
+
+        <div class="cert-details">
+          <div>
+            <span class="detail-label">Scale</span>
+            <strong>1000+ teams</strong>
+          </div>
+          <div>
+            <span class="detail-label">Venue</span>
+            <strong>Vigyan Bhawan</strong>
+          </div>
+        </div>
+
+        <button type="button" class="cert-btn" data-cert="assets/img3.jpg">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View certificate
         </button>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
 
-<!-- ===== CERTIFICATE MODAL ===== -->
-<div class="cert-modal" id="certModal">
+<!-- ===== CERTIFICATE MODAL (put once, before </body>) ===== -->
+<div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate preview">
   <div class="cert-modal-overlay" data-close></div>
   <div class="cert-modal-content">
-    <button class="cert-modal-close" data-close aria-label="Close">
+    <button type="button" class="cert-modal-close" data-close aria-label="Close preview">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <img src="" alt="Certificate" id="certModalImg" />
+    <img id="certModalImg" alt="Certificate preview" />
   </div>
 </div>
-
       <!-- ===== CONTACT ===== -->
 <section id="contact" class="section">
   <h2>Let's Connect</h2>
