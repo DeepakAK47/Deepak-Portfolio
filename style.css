@@ -437,6 +437,50 @@ body {
   .resume-btn { justify-content: center; }
 }
 
+/* ===== PROJECT BUTTONS ===== */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 10px 17px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  background: var(--accent);
+  color: #0d0d0d;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #ffdd57;
+  color: #0d0d0d;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 197, 24, 0.25);
+}
+
+.project-link.outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.project-link.outline:hover {
+  background: var(--accent);
+  color: #0d0d0d;
+}
+
+.project-link i { font-size: 0.85rem; }
+
 /* ===== CERTIFICATIONS ===== */
 .cert-list {
   display: flex;
