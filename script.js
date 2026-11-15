@@ -1,3 +1,5 @@
+renderPortfolio(portfolioData);
+
 const tabs = document.querySelectorAll('.tab');
 const sections = document.querySelectorAll('.section');
 
