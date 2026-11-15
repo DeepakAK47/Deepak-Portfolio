@@ -481,6 +481,18 @@ body {
 
 .project-link i { font-size: 0.85rem; }
 
+/* ===== PROJECT VIDEOS ===== */
+.project-video {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  margin: 18px 0 22px;
+  background: #0d0d0d;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  object-fit: contain;
+}
+
 /* ===== CERTIFICATIONS ===== */
 .cert-list {
   display: flex;

@@ -45,11 +45,20 @@ const portfolioData = {
     ],
     resumeFile: 'assets/Resume_ML.pdf'
   },
+
   projects: [
+    {
+      title: 'FinPulse (Multi-Agent Financial Intelligence System)', year: '2026',
+      description: 'FinPulse turns the daily flood of financial news into decision-ready market intelligence. Its LangGraph-powered multi-agent pipeline collects live articles, removes semantic duplicates, identifies companies, sectors, regulators, and keywords, then maps each event to potentially impacted stocks with confidence scores. Through the Streamlit dashboard, users can explore the latest coverage, filter news, search by company or sector, and ask natural-language questions to quickly understand what is moving the market. Built with persistent SQLite and ChromaDB storage, plus FastAPI, Gemini, and Finnhub integrations.',
+      tags: ['Python', 'Streamlit', 'LangGraph', 'FastAPI', 'ChromaDB', 'SQLite', 'Gemini', 'Finnhub'],
+      video: 'finPulse.mp4',
+      demo: 'https://finpulse-zvph53rnzynsm6v6orj6tj.streamlit.app/', github: 'https://github.com/DeepakAK47/finPulse'
+    },
     {
       title: 'CerebraScan (Brain Tumor Segmentation)', year: 'Oct 2026',
       description: 'An end-to-end medical imaging pipeline that localizes brain tumors from MRI scans. Built using a ResU-Net architecture (ResNet34 encoder) trained on the LGG MRI Segmentation dataset. Achieved a Test Dice score of 0.85+ by handling class imbalance with a combined Dice + BCE Loss. Features a real-time Streamlit interface for MRI upload, tumor overlay visualization, and confidence tracking.',
       tags: ['PyTorch', 'ResU-Net', 'Segmentation Models', 'OpenCV', 'Albumentations', 'Streamlit'],
+      video: 'cerebraScan.mp4',
       demo: 'https://cerebrascan-7ve24rzgfnozajdi69e7fx.streamlit.app/', github: 'https://github.com/DeepakAK47/CerebraScan'
     },
     {
@@ -65,6 +74,8 @@ const portfolioData = {
       demo: 'https://whatsapp-chat-analyser.onrender.com/', github: 'https://github.com/DeepakAK47/whatsapp_chat_analyser'
     }
   ],
+
+
   certifications: [
     {
       mainImage: 'assets/img9.jpeg', subImages: ['assets/img4.jpg', 'assets/img7.jpeg'], badgeIcon: 'fa-shield-halved', badge: 'Indian Army',
