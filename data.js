@@ -39,7 +39,7 @@ const portfolioData = {
       ['Machine Learning & DL', 85],
       ['Python', 90],
       ['Data Science & Analytics', 80],
-      ['C++ / DSA', 85],
+      ['DSA(C++)', 85],
       ['Pytorch', 75],
       ['SQL', 70]
     ],
@@ -50,27 +50,23 @@ const portfolioData = {
     {
       title: 'FinPulse (Multi-Agent Financial Intelligence System)', year: '2026',
       description: 'FinPulse turns the daily flood of financial news into decision-ready market intelligence. Its LangGraph-powered multi-agent pipeline collects live articles, removes semantic duplicates, identifies companies, sectors, regulators, and keywords, then maps each event to potentially impacted stocks with confidence scores. Through the Streamlit dashboard, users can explore the latest coverage, filter news, search by company or sector, and ask natural-language questions to quickly understand what is moving the market. Built with persistent SQLite and ChromaDB storage, plus FastAPI, Gemini, and Finnhub integrations.',
-      tags: ['Python', 'Streamlit', 'LangGraph', 'FastAPI', 'ChromaDB', 'SQLite', 'Gemini', 'Finnhub'],
       video: 'finPulse.mp4',
       demo: 'https://finpulse-zvph53rnzynsm6v6orj6tj.streamlit.app/', github: 'https://github.com/DeepakAK47/finPulse'
     },
     {
       title: 'CerebraScan (Brain Tumor Segmentation)', year: 'Oct 2026',
       description: 'An end-to-end medical imaging pipeline that localizes brain tumors from MRI scans. Built using a ResU-Net architecture (ResNet34 encoder) trained on the LGG MRI Segmentation dataset. Achieved a Test Dice score of 0.85+ by handling class imbalance with a combined Dice + BCE Loss. Features a real-time Streamlit interface for MRI upload, tumor overlay visualization, and confidence tracking.',
-      tags: ['PyTorch', 'ResU-Net', 'Segmentation Models', 'OpenCV', 'Albumentations', 'Streamlit'],
       video: 'cerebraScan.mp4',
       demo: 'https://cerebrascan-7ve24rzgfnozajdi69e7fx.streamlit.app/', github: 'https://github.com/DeepakAK47/CerebraScan'
     },
     {
       title: 'Movie Recommendation System', year: 'Mar 2026 – May 2026',
       description: 'A content-based movie recommender built on the TMDB 5000 dataset. It applies NLP preprocessing (tokenization, stopword removal, stemming) on movie metadata (genres, keywords, cast, crew, overview), vectorizes the combined features using TF-IDF, and computes a cosine similarity matrix to return the top-5 most similar movies for any given title. Deployed as an interactive Streamlit web app with live TMDB API integration for movie posters.',
-      tags: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'NLTK', 'Streamlit', 'TMDB API', 'Git LFS'],
       demo: 'https://movie-recommendation-system-4hvz.onrender.com/', github: 'https://github.com/DeepakAK47/movie_recommendation_system'
     },
     {
       title: 'WhatsApp Chat Analyzer', year: 'Jul 2025 – Sep 2025',
       description: 'A Streamlit-based web app that transforms exported WhatsApp chat files (.txt) into interactive visual insights — including total messages, word count, media shared, most active users, word clouds, most common words, and monthly/hourly activity charts. Users can filter by participant and date range for personalized analysis.',
-      tags: ['Python', 'Streamlit', 'Pandas', 'Regex', 'Matplotlib', 'WordCloud', 'Render'],
       demo: 'https://whatsapp-chat-analyser.onrender.com/', github: 'https://github.com/DeepakAK47/whatsapp_chat_analyser'
     }
   ],

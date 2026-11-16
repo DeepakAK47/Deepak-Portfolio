@@ -441,7 +441,8 @@ body {
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  column-gap: 12px;
+  row-gap: 16px;
   margin-top: 22px;
 }
 
